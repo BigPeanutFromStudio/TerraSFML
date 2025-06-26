@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - "-isystem"
+    - "C:/msys64/ucrt64/include/c++/13.1.0"  # adjust version if needed
+    - "-isystem"
+    - "C:/msys64/ucrt64/include"              # for C headers
+    - "-isystem"
+    - "C:/msys64/ucrt64/x86_64-w64-mingw32/include"
+    - "--target=x86_64-w64-mingw32"

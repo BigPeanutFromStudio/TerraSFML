@@ -1,4 +1,5 @@
 #include <AssetManager.h>
+#include <iostream>
 
 void AssetManager::loadTexture(const std::string &name, const std::string &filepath)
 {
