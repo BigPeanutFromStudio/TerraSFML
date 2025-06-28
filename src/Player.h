@@ -9,10 +9,12 @@ public:
   void draw(sf::RenderWindow &window);
   void update(const int delta_time);
   void set_position(const sf::Vector2f &position);
-  void apply_velocity(const sf::Vector2f &velocity);
-  void add_velocity(const sf::Vector2f &velocity);
+  sf::Vector2f get_position();
+  void set_acceleration(const float &x_acceleration);
 
 private:
   sf::Sprite _sprite;
   sf::Vector2f _velocity;
+  sf::Vector2f _acceleration;
+  void accelerate_x();
 };
